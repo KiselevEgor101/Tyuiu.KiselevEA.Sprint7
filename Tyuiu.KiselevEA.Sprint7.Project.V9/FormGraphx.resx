@@ -117,21 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="textBoxAbout_KEA.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
-  <data name="textBoxAbout_KEA.Text" xml:space="preserve">
-    <value>Разработчик: Киселев Е. А.
-группа СМАРТб-24-1
-
-
-Программа разработана в рамках 
-изучения языка C#
-
-Тюменский индустриальный 
-университет (с) 2023
-Высшая школа цифровых технолгий (с) 2023
-
-Внутреннее имя: Tyuiu.KiselevEA.Sprint7.V9</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAK+SURBVFhHxZZLTBNRFIZZaHcmstCVW/e6sYmK9gFR
+        IRAlGoMaJIEFCQtc+AhqIlAUsfISIiiiRknQgBgI0ymvVgtWnhFthJTyEKTQSmKMirIw/p47OEAnNwqx
+        M57ky+T+d3ruN7cz00YA+K9wQy3hhlrCDbWEGypZQ+mMlhYwzLm2ZhqvYyGvpww3VLLK0u3NsaNjeBYP
+        usZhIgnKNrAJXk8ZbqhkFSUt/nzkA7ZeEFDtGoMx184+uIlN8nrKcEMlfylp8fbhILZZ2iSqno3S1yAJ
+        bGYn8HrKcEMlfyidIUeEOBTEjnwHdhY4ob/qRKVTGwFp8cY3AeyyumAo6oSxuBNRhS6UO3yqC0iLP3nl
+        x57iFzCXuhFT9lLCUOJGSZuPbkL1BKTFHw34YS7rxr7yHhy42YtYgh1jaHy9dUQ1AZ0hV0SN2ze/v6If
+        cbf6kXB7YIl4IrayHwUt6uwAXbmdHjHvfFzVIBLuDOJg9SAOrYCN42nuihh+AZ0prwUVzpHvKY+9SLzr
+        weH7HhxRwLLEex5YxNGwC0QygRttQwtp9T4cfTiEpBo+bC7bFv4diCT0Bnq7lba+/ZZU68PxWi9OcDhG
+        XBLCvwM6Ygux20hPQJFj9Edy/QRO1o0hRUFy3TguCmPq3ITEbwkbCl1+pD6dQlrDuxBSGyZxXmA/RuEX
+        YCVLRDGJa64ZpDf5kd74fpmmaWQ1T6gmwCpEwtr9CRliABnCzCK2AM4JkzDR+4LOUUWA1bJEtoCCns84
+        1TqHTHsQmXQ8K0ypLsAqRCK/9ytOd3xcRJzWRIDVkoSBJC73LSCri0TEWfpLpo0AqxU70Qzr65840z6H
+        6Dz1bkJeLUmYLSKi6QmIsYhfaKyZACtZQk+YiO3ERoLbU4YbKllDMQn22mZXzhZfT3B7ynBDJf9avJ4y
+        3FBLuKGWcEPtQMQv6x484Ty1uTIAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

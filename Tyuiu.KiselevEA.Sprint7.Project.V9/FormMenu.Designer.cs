@@ -55,7 +55,7 @@
             textBoxName_KEA.BorderStyle = BorderStyle.None;
             textBoxName_KEA.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             textBoxName_KEA.ForeColor = SystemColors.Window;
-            textBoxName_KEA.Location = new Point(419, 63);
+            textBoxName_KEA.Location = new Point(406, 63);
             textBoxName_KEA.Multiline = true;
             textBoxName_KEA.Name = "textBoxName_KEA";
             textBoxName_KEA.ReadOnly = true;
@@ -68,6 +68,7 @@
             // 
             buttonClose_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonClose_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonClose_KEA.FlatStyle = FlatStyle.Popup;
             buttonClose_KEA.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonClose_KEA.ForeColor = SystemColors.Window;
             buttonClose_KEA.Location = new Point(678, 397);
@@ -82,6 +83,7 @@
             // 
             buttonGuide_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonGuide_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonGuide_KEA.FlatStyle = FlatStyle.Popup;
             buttonGuide_KEA.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonGuide_KEA.ForeColor = SystemColors.Window;
             buttonGuide_KEA.Location = new Point(12, 400);
@@ -90,11 +92,13 @@
             buttonGuide_KEA.TabIndex = 3;
             buttonGuide_KEA.Text = "Руководство";
             buttonGuide_KEA.UseVisualStyleBackColor = false;
+            buttonGuide_KEA.Click += buttonGuide_KEA_Click;
             // 
             // buttonAbout_KEA
             // 
             buttonAbout_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonAbout_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonAbout_KEA.FlatStyle = FlatStyle.Popup;
             buttonAbout_KEA.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonAbout_KEA.ForeColor = SystemColors.Window;
             buttonAbout_KEA.Location = new Point(128, 400);
@@ -109,14 +113,17 @@
             // 
             buttonStart_KEA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonStart_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonStart_KEA.FlatStyle = FlatStyle.Popup;
             buttonStart_KEA.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonStart_KEA.ForeColor = SystemColors.Window;
-            buttonStart_KEA.Location = new Point(431, 167);
+            buttonStart_KEA.Location = new Point(415, 167);
             buttonStart_KEA.Name = "buttonStart_KEA";
             buttonStart_KEA.Size = new Size(268, 56);
             buttonStart_KEA.TabIndex = 5;
             buttonStart_KEA.Text = "Запустить программу";
             buttonStart_KEA.UseVisualStyleBackColor = false;
+            buttonStart_KEA.Click += buttonStart_KEA_Click;
+            buttonStart_KEA.Enter += buttonStart_KEA_Enter;
             // 
             // FormMenu
             // 
@@ -133,6 +140,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ClipVaultS";
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo_KEA).EndInit();
             ResumeLayout(false);

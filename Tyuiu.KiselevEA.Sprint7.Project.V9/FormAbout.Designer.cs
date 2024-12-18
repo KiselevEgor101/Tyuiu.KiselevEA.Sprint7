@@ -51,13 +51,14 @@
             // buttonOK_KEA
             // 
             buttonOK_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonOK_KEA.FlatStyle = FlatStyle.Popup;
             buttonOK_KEA.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             buttonOK_KEA.ForeColor = SystemColors.Window;
             buttonOK_KEA.Location = new Point(369, 210);
             buttonOK_KEA.Name = "buttonOK_KEA";
             buttonOK_KEA.Size = new Size(81, 32);
             buttonOK_KEA.TabIndex = 1;
-            buttonOK_KEA.Text = "ОК";
+            buttonOK_KEA.Text = "Закрыть";
             buttonOK_KEA.UseVisualStyleBackColor = false;
             buttonOK_KEA.Click += buttonOK_KEA_Click;
             // 
@@ -69,9 +70,10 @@
             ClientSize = new Size(461, 249);
             Controls.Add(buttonOK_KEA);
             Controls.Add(textBoxAbout_KEA);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormAbout";
-            Text = "FormAbout";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "О программе";
             ResumeLayout(false);
             PerformLayout();
         }
