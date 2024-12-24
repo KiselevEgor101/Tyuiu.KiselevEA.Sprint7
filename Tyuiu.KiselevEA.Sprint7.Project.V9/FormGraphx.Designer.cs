@@ -163,9 +163,9 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.GridColor = SystemColors.MenuHighlight;
-            dataGridView1.Location = new Point(924, 2);
+            dataGridView1.Location = new Point(1215, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(181, 178);
+            dataGridView1.Size = new Size(95, 77);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 

@@ -35,6 +35,7 @@
             buttonMenu_KEA = new Button();
             button1 = new Button();
             buttonAbout_KEA = new Button();
+            buttonGraph_KEA = new Button();
             SuspendLayout();
             // 
             // textBoxGuidesMenu_KEA
@@ -128,12 +129,26 @@
             buttonAbout_KEA.UseVisualStyleBackColor = false;
             buttonAbout_KEA.Click += buttonAbout_KEA_Click;
             // 
+            // buttonGraph_KEA
+            // 
+            buttonGraph_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonGraph_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonGraph_KEA.ForeColor = SystemColors.ButtonFace;
+            buttonGraph_KEA.Location = new Point(488, 309);
+            buttonGraph_KEA.Name = "buttonGraph_KEA";
+            buttonGraph_KEA.Size = new Size(120, 65);
+            buttonGraph_KEA.TabIndex = 6;
+            buttonGraph_KEA.Text = "Графики";
+            buttonGraph_KEA.UseVisualStyleBackColor = false;
+            buttonGraph_KEA.Click += buttonGraph_KEA_Click;
+            // 
             // FormGuides
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(764, 391);
+            Controls.Add(buttonGraph_KEA);
             Controls.Add(buttonAbout_KEA);
             Controls.Add(button1);
             Controls.Add(buttonMenu_KEA);
@@ -158,5 +173,6 @@
         private Button buttonMenu_KEA;
         private Button button1;
         private Button buttonAbout_KEA;
+        private Button buttonGraph_KEA;
     }
 }

@@ -20,7 +20,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
         {
             InitializeComponent();
             dataGridView1.Visible = false;
-            
+
         }
 
         DataService ds = new DataService();
@@ -43,7 +43,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
                 var dataTable = ds.ReadCsvToDataTable(filePath);
                 dataGridView1.DataSource = dataTable;
 
-                
+
                 chartGraphx_KEA.Series.Clear();
 
                 // Сбор данных для графика
@@ -59,7 +59,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
                     })
                     .ToList();
 
-                
+
                 var colors = new List<System.Drawing.Color>
         {
             System.Drawing.Color.Red,
@@ -79,22 +79,22 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
                     var series = new System.Windows.Forms.DataVisualization.Charting.Series
                     {
                         Name = titles[i],
-                        Color = colors[i % colors.Count], 
+                        Color = colors[i % colors.Count],
                         IsValueShownAsLabel = true
                     };
                     series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
 
-                    
+
                     series.Points.AddXY(titles[i], values[i]);
                     chartGraphx_KEA.Series.Add(series);
                 }
 
                 // Увеличение расстояний между столбцами
-                chartGraphx_KEA.ChartAreas[0].AxisX.Interval = 1; 
+                chartGraphx_KEA.ChartAreas[0].AxisX.Interval = 1;
                 chartGraphx_KEA.ChartAreas[0].AxisX.IsInterlaced = true;
                 foreach (var series in chartGraphx_KEA.Series)
                 {
-                    series["PointWidth"] = "2"; 
+                    series["PointWidth"] = "2";
                 }
                 chartGraphx_KEA.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
             }
@@ -172,6 +172,17 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
                     chartGraphx_KEA.Series.Add(series);
                 }
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClear_KEA_Click(object sender, EventArgs e)
+        {
+            chartGraphx_KEA.Series.Clear();
+            chartGraphx_KEA.ChartAreas.Clear();
         }
     }
 }

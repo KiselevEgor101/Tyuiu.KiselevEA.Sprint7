@@ -30,8 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGeneral));
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             buttonBackMenu_KEA = new Button();
             panel1 = new Panel();
             buttonAbout_KEA = new Button();
@@ -293,23 +293,23 @@
             // 
             dataGridViewData_KEA.BackgroundColor = Color.FromArgb(48, 48, 48);
             dataGridViewData_KEA.BorderStyle = BorderStyle.Fixed3D;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.IndianRed;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dataGridViewData_KEA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.IndianRed;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridViewData_KEA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewData_KEA.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10 });
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.WindowFrame;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dataGridViewCellStyle4.ForeColor = SystemColors.Window;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            dataGridViewData_KEA.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.WindowFrame;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle2.ForeColor = SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridViewData_KEA.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewData_KEA.Dock = DockStyle.Fill;
             dataGridViewData_KEA.GridColor = Color.Gainsboro;
             dataGridViewData_KEA.Location = new Point(3, 21);
@@ -443,6 +443,7 @@
             textBox16.ForeColor = SystemColors.MenuBar;
             textBox16.Location = new Point(909, 46);
             textBox16.Name = "textBox16";
+            textBox16.ReadOnly = true;
             textBox16.Size = new Size(132, 18);
             textBox16.TabIndex = 17;
             textBox16.Text = "Введите режиссера:";
@@ -455,6 +456,7 @@
             textBox15.ForeColor = SystemColors.MenuBar;
             textBox15.Location = new Point(792, 46);
             textBox15.Name = "textBox15";
+            textBox15.ReadOnly = true;
             textBox15.Size = new Size(147, 18);
             textBox15.TabIndex = 16;
             textBox15.Text = "Введите бюджет:";
@@ -467,6 +469,7 @@
             textBox14.ForeColor = SystemColors.MenuBar;
             textBox14.Location = new Point(707, 46);
             textBox14.Name = "textBox14";
+            textBox14.ReadOnly = true;
             textBox14.Size = new Size(147, 18);
             textBox14.TabIndex = 15;
             textBox14.Text = "Введите год:";
@@ -479,6 +482,7 @@
             textBox13.ForeColor = SystemColors.MenuBar;
             textBox13.Location = new Point(611, 46);
             textBox13.Name = "textBox13";
+            textBox13.ReadOnly = true;
             textBox13.Size = new Size(147, 18);
             textBox13.TabIndex = 14;
             textBox13.Text = "Введите жанр:";
@@ -491,6 +495,7 @@
             textBox12.ForeColor = SystemColors.MenuBar;
             textBox12.Location = new Point(477, 46);
             textBox12.Name = "textBox12";
+            textBox12.ReadOnly = true;
             textBox12.Size = new Size(147, 18);
             textBox12.TabIndex = 13;
             textBox12.Text = "Введите категорию:";
@@ -503,6 +508,7 @@
             textBox11.ForeColor = SystemColors.MenuBar;
             textBox11.Location = new Point(364, 46);
             textBox11.Name = "textBox11";
+            textBox11.ReadOnly = true;
             textBox11.Size = new Size(147, 18);
             textBox11.TabIndex = 12;
             textBox11.Text = "Введите формат:";
@@ -515,6 +521,7 @@
             textBox10.ForeColor = SystemColors.MenuBar;
             textBox10.Location = new Point(277, 46);
             textBox10.Name = "textBox10";
+            textBox10.ReadOnly = true;
             textBox10.Size = new Size(147, 18);
             textBox10.TabIndex = 11;
             textBox10.Text = "Введите вес:";
@@ -601,6 +608,7 @@
             textBox2.ForeColor = SystemColors.MenuBar;
             textBox2.Location = new Point(124, 46);
             textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
             textBox2.Size = new Size(147, 18);
             textBox2.TabIndex = 3;
             textBox2.Text = "Введите длительность:";
@@ -623,6 +631,7 @@
             textBox1.ForeColor = SystemColors.MenuBar;
             textBox1.Location = new Point(4, 46);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(124, 18);
             textBox1.TabIndex = 1;
             textBox1.Text = "Введите название:";
@@ -647,7 +656,7 @@
             // 
             жанрToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { комедияToolStripMenuItem, драмаToolStripMenuItem, фантастикаToolStripMenuItem, боевикToolStripMenuItem, триллерToolStripMenuItem });
             жанрToolStripMenuItem.Name = "жанрToolStripMenuItem";
-            жанрToolStripMenuItem.Size = new Size(180, 22);
+            жанрToolStripMenuItem.Size = new Size(130, 22);
             жанрToolStripMenuItem.Text = "Жанр";
             // 
             // комедияToolStripMenuItem
@@ -689,7 +698,7 @@
             // 
             категорияToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { мультфильмToolStripMenuItem, полнометражныйФильмToolStripMenuItem });
             категорияToolStripMenuItem.Name = "категорияToolStripMenuItem";
-            категорияToolStripMenuItem.Size = new Size(180, 22);
+            категорияToolStripMenuItem.Size = new Size(130, 22);
             категорияToolStripMenuItem.Text = "Категория";
             // 
             // мультфильмToolStripMenuItem
@@ -710,7 +719,7 @@
             // 
             странаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { россияToolStripMenuItem, сШАToolStripMenuItem, францияToolStripMenuItem });
             странаToolStripMenuItem.Name = "странаToolStripMenuItem";
-            странаToolStripMenuItem.Size = new Size(180, 22);
+            странаToolStripMenuItem.Size = new Size(130, 22);
             странаToolStripMenuItem.Text = "Страна";
             // 
             // россияToolStripMenuItem
