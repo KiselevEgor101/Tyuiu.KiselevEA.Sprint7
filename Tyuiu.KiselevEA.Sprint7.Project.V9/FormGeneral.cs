@@ -220,7 +220,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
             }
 
             List<DataGridViewRow> filteredRows = new List<DataGridViewRow>();
-            Regex regex = new Regex(@"(?i)драма"); // Регистронезависимый поиск 
+            Regex regex = new Regex(@"(?i)драма"); 
 
             foreach (DataGridViewRow row in dataGridViewData_KEA.Rows)
             {
@@ -263,7 +263,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
             }
 
             List<DataGridViewRow> filteredRows = new List<DataGridViewRow>();
-            Regex regex = new Regex(@"(?i)фантастика"); // Регистронезависимый поиск 
+            Regex regex = new Regex(@"(?i)фантастика"); 
 
             foreach (DataGridViewRow row in dataGridViewData_KEA.Rows)
             {
@@ -301,7 +301,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
             }
 
             List<DataGridViewRow> filteredRows = new List<DataGridViewRow>();
-            Regex regex = new Regex(@"(?i)мультфильм"); // Регистронезависимый поиск 
+            Regex regex = new Regex(@"(?i)мультфильм"); 
 
             foreach (DataGridViewRow row in dataGridViewData_KEA.Rows)
             {
@@ -340,7 +340,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
             }
 
             List<DataGridViewRow> filteredRows = new List<DataGridViewRow>();
-            Regex regex = new Regex(@"(?i)полнометражный фильм"); // Регистронезависимый поиск 
+            Regex regex = new Regex(@"(?i)полнометражный фильм"); 
 
             foreach (DataGridViewRow row in dataGridViewData_KEA.Rows)
             {
@@ -401,7 +401,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
             string.IsNullOrWhiteSpace(textBoxDirector_KEA.Text))
             {
                 MessageBox.Show("Пожалуйста, заполните все поля!");
-                return; // Прерываем выполнение если есть пустые поля
+                return; 
             }
 
             int rowIndex = dataGridViewData_KEA.Rows.Add();
@@ -427,19 +427,19 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
 
             dataGridViewData_KEA.Rows[rowIndex].Cells[9].Value = DirectorValue;
 
-            // Проверяем достаточно строк
+            
             if (currentRowIndex < dataGridViewData_KEA.Rows.Count)
             {
-                dataGridViewData_KEA.Rows[currentRowIndex].Cells[0].Value = counter + 0; // Начинаем с 5
+                dataGridViewData_KEA.Rows[currentRowIndex].Cells[0].Value = counter + 0; 
                 counter++;
                 currentRowIndex++;
             }
             else
             {
                 MessageBox.Show("Все строки заполнены или их нет.");
-                // Добавляем новую строку если их недостаточно
+                
                 dataGridViewData_KEA.Rows.Add();
-                // Сбрасываем индекс на 4 чтобы продолжить с 5 строки
+                
                 currentRowIndex = 31;
             }
             textBoxName_KEA.Clear();
