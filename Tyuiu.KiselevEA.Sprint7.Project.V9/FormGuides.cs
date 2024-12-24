@@ -70,7 +70,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
 
         private void buttonGraph_KEA_Click(object sender, EventArgs e)
         {
-            string GraphText = "Графики:\n" +
+            string GraphText = "Графики:\n" + 
                       "Кнопка \"Назад\" - Возвращает пользователя в главное окно \n" +
                       
                       "Кнопка \"Выберите график\" - открывает окно с выбором нужного графика";                                       
