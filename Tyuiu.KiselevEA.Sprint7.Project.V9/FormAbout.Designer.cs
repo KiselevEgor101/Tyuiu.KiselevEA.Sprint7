@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             textBoxAbout_KEA = new TextBox();
             buttonOK_KEA = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBoxAbout_KEA
@@ -62,18 +64,30 @@
             buttonOK_KEA.UseVisualStyleBackColor = false;
             buttonOK_KEA.Click += buttonOK_KEA_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(153, 197);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(461, 249);
+            Controls.Add(pictureBox1);
             Controls.Add(buttonOK_KEA);
             Controls.Add(textBoxAbout_KEA);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormAbout";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -82,5 +96,6 @@
 
         private TextBox textBoxAbout_KEA;
         private Button buttonOK_KEA;
+        private PictureBox pictureBox1;
     }
 }

@@ -34,6 +34,7 @@
             textBoxGroup_KEA = new TextBox();
             buttonMenu_KEA = new Button();
             button1 = new Button();
+            buttonAbout_KEA = new Button();
             SuspendLayout();
             // 
             // textBoxGuidesMenu_KEA
@@ -48,7 +49,7 @@
             textBoxGuidesMenu_KEA.Multiline = true;
             textBoxGuidesMenu_KEA.Name = "textBoxGuidesMenu_KEA";
             textBoxGuidesMenu_KEA.ReadOnly = true;
-            textBoxGuidesMenu_KEA.Size = new Size(1016, 259);
+            textBoxGuidesMenu_KEA.Size = new Size(751, 259);
             textBoxGuidesMenu_KEA.TabIndex = 0;
             textBoxGuidesMenu_KEA.TabStop = false;
             textBoxGuidesMenu_KEA.TextChanged += textBoxGuidesMenu_KEA_TextChanged;
@@ -60,7 +61,7 @@
             buttonGuidesClose_KEA.FlatStyle = FlatStyle.Popup;
             buttonGuidesClose_KEA.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonGuidesClose_KEA.ForeColor = SystemColors.Window;
-            buttonGuidesClose_KEA.Location = new Point(887, 563);
+            buttonGuidesClose_KEA.Location = new Point(622, 324);
             buttonGuidesClose_KEA.Margin = new Padding(4);
             buttonGuidesClose_KEA.Name = "buttonGuidesClose_KEA";
             buttonGuidesClose_KEA.Size = new Size(126, 50);
@@ -71,23 +72,26 @@
             // 
             // textBoxGroup_KEA
             // 
+            textBoxGroup_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             textBoxGroup_KEA.BackColor = Color.FromArgb(64, 64, 64);
             textBoxGroup_KEA.BorderStyle = BorderStyle.None;
             textBoxGroup_KEA.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             textBoxGroup_KEA.ForeColor = SystemColors.ButtonHighlight;
-            textBoxGroup_KEA.Location = new Point(13, 551);
+            textBoxGroup_KEA.Location = new Point(13, 312);
             textBoxGroup_KEA.Margin = new Padding(4);
             textBoxGroup_KEA.Multiline = true;
             textBoxGroup_KEA.Name = "textBoxGroup_KEA";
             textBoxGroup_KEA.Size = new Size(145, 66);
             textBoxGroup_KEA.TabIndex = 2;
             textBoxGroup_KEA.Text = "Выберите\r\nраздел:";
+            textBoxGroup_KEA.TextChanged += textBoxGroup_KEA_TextChanged;
             // 
             // buttonMenu_KEA
             // 
+            buttonMenu_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonMenu_KEA.BackColor = Color.FromArgb(48, 48, 48);
             buttonMenu_KEA.ForeColor = SystemColors.ButtonHighlight;
-            buttonMenu_KEA.Location = new Point(114, 547);
+            buttonMenu_KEA.Location = new Point(114, 308);
             buttonMenu_KEA.Margin = new Padding(4);
             buttonMenu_KEA.Name = "buttonMenu_KEA";
             buttonMenu_KEA.Size = new Size(109, 66);
@@ -98,9 +102,10 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button1.BackColor = Color.FromArgb(48, 48, 48);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(231, 547);
+            button1.Location = new Point(231, 308);
             button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(121, 66);
@@ -109,12 +114,27 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // buttonAbout_KEA
+            // 
+            buttonAbout_KEA.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonAbout_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonAbout_KEA.ForeColor = SystemColors.ButtonHighlight;
+            buttonAbout_KEA.Location = new Point(360, 308);
+            buttonAbout_KEA.Margin = new Padding(4);
+            buttonAbout_KEA.Name = "buttonAbout_KEA";
+            buttonAbout_KEA.Size = new Size(121, 66);
+            buttonAbout_KEA.TabIndex = 5;
+            buttonAbout_KEA.Text = "Руководство";
+            buttonAbout_KEA.UseVisualStyleBackColor = false;
+            buttonAbout_KEA.Click += buttonAbout_KEA_Click;
+            // 
             // FormGuides
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
-            ClientSize = new Size(1029, 630);
+            ClientSize = new Size(764, 391);
+            Controls.Add(buttonAbout_KEA);
             Controls.Add(button1);
             Controls.Add(buttonMenu_KEA);
             Controls.Add(textBoxGroup_KEA);
@@ -137,5 +157,6 @@
         private TextBox textBoxGroup_KEA;
         private Button buttonMenu_KEA;
         private Button button1;
+        private Button buttonAbout_KEA;
     }
 }

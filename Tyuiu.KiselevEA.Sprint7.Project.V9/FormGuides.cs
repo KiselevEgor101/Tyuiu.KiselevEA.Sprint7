@@ -40,15 +40,31 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string GenText = "Приложение:\n\n" +
+            string GenText = "Приложение:\n" +
                       "Кнопка \"Открыть файл\" - открывает меню с выбором файла для открытия в программе \n" +
                       "Кнопка \"Сохранить файл\" - открывает меню с выбором пути для сохранения файла \n" +
+                      "Кнопка \"Графики\" - открывает окно с графиками \n" +
                       "Кнопка \"Очистить\" - очищает таблицу \n" +
+                      "\n"+
                       "Кнопка \"Фильтр\" - открывает меню с выбором категории фильтрации \n" +
+                      "Кнопка \"Наименьшее и наибольшее\" - открывает меню с выбором категории фильтрации от большего к меньшему \n" +
                       "Кнопка \"Добавить\" - добавляет в таблицу новые значения из заполненных строк \n" +
                       "Кнопка \"Назад в меню\" - Возвращает в главное меню.";
 
             textBoxGuidesMenu_KEA.Text = GenText;
+        }
+
+        private void textBoxGroup_KEA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAbout_KEA_Click(object sender, EventArgs e)
+        {
+            string AbText = "Кнопка \"Закрыть\" - Закрывает руководство и возвращает в главное меню.";
+
+
+            textBoxGuidesMenu_KEA.Text = AbText;
         }
     }
 }

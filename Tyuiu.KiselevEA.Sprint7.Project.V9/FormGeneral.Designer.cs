@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGeneral));
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             buttonBackMenu_KEA = new Button();
             panel1 = new Panel();
+            buttonAbout_KEA = new Button();
+            buttonGuide_KEA = new Button();
             buttonClear_KEA = new Button();
             pictureBox1 = new PictureBox();
             buttonOpenGraph_KEA = new Button();
@@ -80,9 +83,29 @@
             комедияToolStripMenuItem = new ToolStripMenuItem();
             драмаToolStripMenuItem = new ToolStripMenuItem();
             фантастикаToolStripMenuItem = new ToolStripMenuItem();
+            боевикToolStripMenuItem = new ToolStripMenuItem();
+            триллерToolStripMenuItem = new ToolStripMenuItem();
             категорияToolStripMenuItem = new ToolStripMenuItem();
             мультфильмToolStripMenuItem = new ToolStripMenuItem();
             полнометражныйФильмToolStripMenuItem = new ToolStripMenuItem();
+            странаToolStripMenuItem = new ToolStripMenuItem();
+            россияToolStripMenuItem = new ToolStripMenuItem();
+            сШАToolStripMenuItem = new ToolStripMenuItem();
+            францияToolStripMenuItem = new ToolStripMenuItem();
+            наименьшееЗначениеToolStripMenuItem = new ToolStripMenuItem();
+            времяToolStripMenuItem = new ToolStripMenuItem();
+            меньшеToolStripMenuItem = new ToolStripMenuItem();
+            большеToolStripMenuItem = new ToolStripMenuItem();
+            весToolStripMenuItem = new ToolStripMenuItem();
+            меньшеToolStripMenuItem1 = new ToolStripMenuItem();
+            большеToolStripMenuItem1 = new ToolStripMenuItem();
+            бюджетToolStripMenuItem = new ToolStripMenuItem();
+            меньшеToolStripMenuItem2 = new ToolStripMenuItem();
+            большеToolStripMenuItem2 = new ToolStripMenuItem();
+            годToolStripMenuItem = new ToolStripMenuItem();
+            меньшеToolStripMenuItem3 = new ToolStripMenuItem();
+            большеToolStripMenuItem3 = new ToolStripMenuItem();
+            toolTip1 = new ToolTip(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxSave_KEA).BeginInit();
@@ -105,6 +128,7 @@
             buttonBackMenu_KEA.Size = new Size(125, 40);
             buttonBackMenu_KEA.TabIndex = 0;
             buttonBackMenu_KEA.Text = "Назад в меню";
+            toolTip1.SetToolTip(buttonBackMenu_KEA, "Возвращает в главное меню");
             buttonBackMenu_KEA.UseVisualStyleBackColor = false;
             buttonBackMenu_KEA.Click += buttonBackMenu_KEA_Click;
             // 
@@ -112,6 +136,8 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(buttonAbout_KEA);
+            panel1.Controls.Add(buttonGuide_KEA);
             panel1.Controls.Add(buttonClear_KEA);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(buttonOpenGraph_KEA);
@@ -125,6 +151,38 @@
             panel1.Size = new Size(1442, 103);
             panel1.TabIndex = 1;
             // 
+            // buttonAbout_KEA
+            // 
+            buttonAbout_KEA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonAbout_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonAbout_KEA.FlatStyle = FlatStyle.Popup;
+            buttonAbout_KEA.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            buttonAbout_KEA.ForeColor = SystemColors.Window;
+            buttonAbout_KEA.Location = new Point(1211, -1);
+            buttonAbout_KEA.Name = "buttonAbout_KEA";
+            buttonAbout_KEA.Size = new Size(110, 44);
+            buttonAbout_KEA.TabIndex = 8;
+            buttonAbout_KEA.Text = "О программе";
+            toolTip1.SetToolTip(buttonAbout_KEA, "Открывает окно \"О программе\"");
+            buttonAbout_KEA.UseVisualStyleBackColor = false;
+            buttonAbout_KEA.Click += buttonAbout_KEA_Click;
+            // 
+            // buttonGuide_KEA
+            // 
+            buttonGuide_KEA.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonGuide_KEA.BackColor = Color.FromArgb(48, 48, 48);
+            buttonGuide_KEA.FlatStyle = FlatStyle.Popup;
+            buttonGuide_KEA.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            buttonGuide_KEA.ForeColor = SystemColors.Window;
+            buttonGuide_KEA.Location = new Point(1327, 0);
+            buttonGuide_KEA.Name = "buttonGuide_KEA";
+            buttonGuide_KEA.Size = new Size(110, 44);
+            buttonGuide_KEA.TabIndex = 7;
+            buttonGuide_KEA.Text = "Руководство";
+            toolTip1.SetToolTip(buttonGuide_KEA, "Открывает окно \"Руководство\"");
+            buttonGuide_KEA.UseVisualStyleBackColor = false;
+            buttonGuide_KEA.Click += buttonGuide_KEA_Click;
+            // 
             // buttonClear_KEA
             // 
             buttonClear_KEA.BackColor = Color.FromArgb(48, 48, 48);
@@ -136,6 +194,7 @@
             buttonClear_KEA.Size = new Size(75, 33);
             buttonClear_KEA.TabIndex = 6;
             buttonClear_KEA.Text = "Очистить";
+            toolTip1.SetToolTip(buttonClear_KEA, "Очищает таблицу");
             buttonClear_KEA.UseVisualStyleBackColor = false;
             buttonClear_KEA.Click += buttonClear_KEA_Click;
             // 
@@ -160,6 +219,7 @@
             buttonOpenGraph_KEA.Size = new Size(141, 38);
             buttonOpenGraph_KEA.TabIndex = 4;
             buttonOpenGraph_KEA.Text = "Открыть графики";
+            toolTip1.SetToolTip(buttonOpenGraph_KEA, "Открывает окно с графиками");
             buttonOpenGraph_KEA.UseVisualStyleBackColor = false;
             buttonOpenGraph_KEA.Click += buttonOpenGraph_KEA_Click;
             // 
@@ -174,6 +234,7 @@
             buttonSave_KEA.Size = new Size(141, 38);
             buttonSave_KEA.TabIndex = 3;
             buttonSave_KEA.Text = "Сохранить файл";
+            toolTip1.SetToolTip(buttonSave_KEA, "Открывает меню с выбором места сохранения файла");
             buttonSave_KEA.UseVisualStyleBackColor = false;
             buttonSave_KEA.Click += buttonSave_KEA_Click;
             // 
@@ -209,7 +270,9 @@
             buttonOpen_KEA.Name = "buttonOpen_KEA";
             buttonOpen_KEA.Size = new Size(127, 38);
             buttonOpen_KEA.TabIndex = 0;
+            buttonOpen_KEA.Tag = "";
             buttonOpen_KEA.Text = "Открыть файл";
+            toolTip1.SetToolTip(buttonOpen_KEA, "Открывает меню выбора файлов");
             buttonOpen_KEA.UseVisualStyleBackColor = false;
             buttonOpen_KEA.Click += buttonOpen_KEA_Click;
             // 
@@ -284,7 +347,7 @@
             // 
             // Column5
             // 
-            Column5.HeaderText = "Формат файла";
+            Column5.HeaderText = "Страна";
             Column5.Name = "Column5";
             Column5.ReadOnly = true;
             // 
@@ -356,7 +419,7 @@
             groupBox1.Size = new Size(1443, 112);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Редактирование и фильтрация";
+            groupBox1.Text = "Фильтрация и редактирование";
             // 
             // buttonAdd_KEA
             // 
@@ -368,6 +431,7 @@
             buttonAdd_KEA.Size = new Size(93, 43);
             buttonAdd_KEA.TabIndex = 18;
             buttonAdd_KEA.Text = "Добавить";
+            toolTip1.SetToolTip(buttonAdd_KEA, "Добавляет новое значение из записанных");
             buttonAdd_KEA.UseVisualStyleBackColor = false;
             buttonAdd_KEA.Click += buttonAdd_KEA_Click;
             // 
@@ -565,7 +629,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { фильтрToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { фильтрToolStripMenuItem, наименьшееЗначениеToolStripMenuItem });
             menuStrip1.Location = new Point(3, 19);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1437, 24);
@@ -574,16 +638,16 @@
             // 
             // фильтрToolStripMenuItem
             // 
-            фильтрToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { жанрToolStripMenuItem, категорияToolStripMenuItem });
+            фильтрToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { жанрToolStripMenuItem, категорияToolStripMenuItem, странаToolStripMenuItem });
             фильтрToolStripMenuItem.Name = "фильтрToolStripMenuItem";
             фильтрToolStripMenuItem.Size = new Size(60, 20);
             фильтрToolStripMenuItem.Text = "Фильтр";
             // 
             // жанрToolStripMenuItem
             // 
-            жанрToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { комедияToolStripMenuItem, драмаToolStripMenuItem, фантастикаToolStripMenuItem });
+            жанрToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { комедияToolStripMenuItem, драмаToolStripMenuItem, фантастикаToolStripMenuItem, боевикToolStripMenuItem, триллерToolStripMenuItem });
             жанрToolStripMenuItem.Name = "жанрToolStripMenuItem";
-            жанрToolStripMenuItem.Size = new Size(130, 22);
+            жанрToolStripMenuItem.Size = new Size(180, 22);
             жанрToolStripMenuItem.Text = "Жанр";
             // 
             // комедияToolStripMenuItem
@@ -607,11 +671,25 @@
             фантастикаToolStripMenuItem.Text = "Фантастика";
             фантастикаToolStripMenuItem.Click += фантастикаToolStripMenuItem_Click;
             // 
+            // боевикToolStripMenuItem
+            // 
+            боевикToolStripMenuItem.Name = "боевикToolStripMenuItem";
+            боевикToolStripMenuItem.Size = new Size(137, 22);
+            боевикToolStripMenuItem.Text = "Боевик";
+            боевикToolStripMenuItem.Click += боевикToolStripMenuItem_Click;
+            // 
+            // триллерToolStripMenuItem
+            // 
+            триллерToolStripMenuItem.Name = "триллерToolStripMenuItem";
+            триллерToolStripMenuItem.Size = new Size(137, 22);
+            триллерToolStripMenuItem.Text = "Триллер";
+            триллерToolStripMenuItem.Click += триллерToolStripMenuItem_Click;
+            // 
             // категорияToolStripMenuItem
             // 
             категорияToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { мультфильмToolStripMenuItem, полнометражныйФильмToolStripMenuItem });
             категорияToolStripMenuItem.Name = "категорияToolStripMenuItem";
-            категорияToolStripMenuItem.Size = new Size(130, 22);
+            категорияToolStripMenuItem.Size = new Size(180, 22);
             категорияToolStripMenuItem.Text = "Категория";
             // 
             // мультфильмToolStripMenuItem
@@ -619,6 +697,7 @@
             мультфильмToolStripMenuItem.Name = "мультфильмToolStripMenuItem";
             мультфильмToolStripMenuItem.Size = new Size(217, 22);
             мультфильмToolStripMenuItem.Text = "Мультфильм";
+            мультфильмToolStripMenuItem.Click += мультфильмToolStripMenuItem_Click_2;
             // 
             // полнометражныйФильмToolStripMenuItem
             // 
@@ -626,6 +705,125 @@
             полнометражныйФильмToolStripMenuItem.Size = new Size(217, 22);
             полнометражныйФильмToolStripMenuItem.Text = "Полнометражный фильм";
             полнометражныйФильмToolStripMenuItem.Click += полнометражныйФильмToolStripMenuItem_Click;
+            // 
+            // странаToolStripMenuItem
+            // 
+            странаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { россияToolStripMenuItem, сШАToolStripMenuItem, францияToolStripMenuItem });
+            странаToolStripMenuItem.Name = "странаToolStripMenuItem";
+            странаToolStripMenuItem.Size = new Size(180, 22);
+            странаToolStripMenuItem.Text = "Страна";
+            // 
+            // россияToolStripMenuItem
+            // 
+            россияToolStripMenuItem.Name = "россияToolStripMenuItem";
+            россияToolStripMenuItem.Size = new Size(123, 22);
+            россияToolStripMenuItem.Text = "Россия";
+            россияToolStripMenuItem.Click += россияToolStripMenuItem_Click;
+            // 
+            // сШАToolStripMenuItem
+            // 
+            сШАToolStripMenuItem.Name = "сШАToolStripMenuItem";
+            сШАToolStripMenuItem.Size = new Size(123, 22);
+            сШАToolStripMenuItem.Text = "США";
+            сШАToolStripMenuItem.Click += сШАToolStripMenuItem_Click_1;
+            // 
+            // францияToolStripMenuItem
+            // 
+            францияToolStripMenuItem.Name = "францияToolStripMenuItem";
+            францияToolStripMenuItem.Size = new Size(123, 22);
+            францияToolStripMenuItem.Text = "Франция";
+            францияToolStripMenuItem.Click += францияToolStripMenuItem_Click;
+            // 
+            // наименьшееЗначениеToolStripMenuItem
+            // 
+            наименьшееЗначениеToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { времяToolStripMenuItem, весToolStripMenuItem, бюджетToolStripMenuItem, годToolStripMenuItem });
+            наименьшееЗначениеToolStripMenuItem.Name = "наименьшееЗначениеToolStripMenuItem";
+            наименьшееЗначениеToolStripMenuItem.Size = new Size(229, 20);
+            наименьшееЗначениеToolStripMenuItem.Text = "Наименьшее и наибольшее значение";
+            // 
+            // времяToolStripMenuItem
+            // 
+            времяToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { меньшеToolStripMenuItem, большеToolStripMenuItem });
+            времяToolStripMenuItem.Name = "времяToolStripMenuItem";
+            времяToolStripMenuItem.Size = new Size(117, 22);
+            времяToolStripMenuItem.Text = "Время";
+            // 
+            // меньшеToolStripMenuItem
+            // 
+            меньшеToolStripMenuItem.Name = "меньшеToolStripMenuItem";
+            меньшеToolStripMenuItem.Size = new Size(121, 22);
+            меньшеToolStripMenuItem.Text = "Меньше";
+            меньшеToolStripMenuItem.Click += меньшеToolStripMenuItem_Click;
+            // 
+            // большеToolStripMenuItem
+            // 
+            большеToolStripMenuItem.Name = "большеToolStripMenuItem";
+            большеToolStripMenuItem.Size = new Size(121, 22);
+            большеToolStripMenuItem.Text = "Больше";
+            большеToolStripMenuItem.Click += большеToolStripMenuItem_Click_1;
+            // 
+            // весToolStripMenuItem
+            // 
+            весToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { меньшеToolStripMenuItem1, большеToolStripMenuItem1 });
+            весToolStripMenuItem.Name = "весToolStripMenuItem";
+            весToolStripMenuItem.Size = new Size(117, 22);
+            весToolStripMenuItem.Text = "Вес";
+            // 
+            // меньшеToolStripMenuItem1
+            // 
+            меньшеToolStripMenuItem1.Name = "меньшеToolStripMenuItem1";
+            меньшеToolStripMenuItem1.Size = new Size(121, 22);
+            меньшеToolStripMenuItem1.Text = "Меньше";
+            меньшеToolStripMenuItem1.Click += меньшеToolStripMenuItem1_Click;
+            // 
+            // большеToolStripMenuItem1
+            // 
+            большеToolStripMenuItem1.Name = "большеToolStripMenuItem1";
+            большеToolStripMenuItem1.Size = new Size(121, 22);
+            большеToolStripMenuItem1.Text = "Больше";
+            большеToolStripMenuItem1.Click += большеToolStripMenuItem1_Click;
+            // 
+            // бюджетToolStripMenuItem
+            // 
+            бюджетToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { меньшеToolStripMenuItem2, большеToolStripMenuItem2 });
+            бюджетToolStripMenuItem.Name = "бюджетToolStripMenuItem";
+            бюджетToolStripMenuItem.Size = new Size(117, 22);
+            бюджетToolStripMenuItem.Text = "Бюджет";
+            // 
+            // меньшеToolStripMenuItem2
+            // 
+            меньшеToolStripMenuItem2.Name = "меньшеToolStripMenuItem2";
+            меньшеToolStripMenuItem2.Size = new Size(121, 22);
+            меньшеToolStripMenuItem2.Text = "Меньше";
+            меньшеToolStripMenuItem2.Click += меньшеToolStripMenuItem2_Click;
+            // 
+            // большеToolStripMenuItem2
+            // 
+            большеToolStripMenuItem2.Name = "большеToolStripMenuItem2";
+            большеToolStripMenuItem2.Size = new Size(121, 22);
+            большеToolStripMenuItem2.Text = "Больше";
+            большеToolStripMenuItem2.Click += большеToolStripMenuItem2_Click;
+            // 
+            // годToolStripMenuItem
+            // 
+            годToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { меньшеToolStripMenuItem3, большеToolStripMenuItem3 });
+            годToolStripMenuItem.Name = "годToolStripMenuItem";
+            годToolStripMenuItem.Size = new Size(117, 22);
+            годToolStripMenuItem.Text = "Год";
+            // 
+            // меньшеToolStripMenuItem3
+            // 
+            меньшеToolStripMenuItem3.Name = "меньшеToolStripMenuItem3";
+            меньшеToolStripMenuItem3.Size = new Size(121, 22);
+            меньшеToolStripMenuItem3.Text = "Меньше";
+            меньшеToolStripMenuItem3.Click += меньшеToolStripMenuItem3_Click;
+            // 
+            // большеToolStripMenuItem3
+            // 
+            большеToolStripMenuItem3.Name = "большеToolStripMenuItem3";
+            большеToolStripMenuItem3.Size = new Size(121, 22);
+            большеToolStripMenuItem3.Text = "Больше";
+            большеToolStripMenuItem3.Click += большеToolStripMenuItem3_Click;
             // 
             // FormGeneral
             // 
@@ -667,16 +865,6 @@
         private GroupBox groupBoxData_KEA;
         private DataGridView dataGridViewData_KEA;
         private OpenFileDialog openFileDialogData_KEA;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
-        private DataGridViewTextBoxColumn Column8;
-        private DataGridViewTextBoxColumn Column9;
-        private DataGridViewTextBoxColumn Column10;
         private SaveFileDialog saveFileDialogData_KEA;
         private Button buttonOpenGraph_KEA;
         private PictureBox pictureBox1;
@@ -710,5 +898,37 @@
         private TextBox textBox4;
         private TextBox textBoxWeigh_KEA;
         private Button buttonAdd_KEA;
+        private ToolStripMenuItem боевикToolStripMenuItem;
+        private ToolStripMenuItem триллерToolStripMenuItem;
+        private ToolStripMenuItem странаToolStripMenuItem;
+        private ToolStripMenuItem россияToolStripMenuItem;
+        private ToolStripMenuItem сШАToolStripMenuItem;
+        private ToolStripMenuItem францияToolStripMenuItem;
+        private ToolStripMenuItem наименьшееЗначениеToolStripMenuItem;
+        private ToolStripMenuItem времяToolStripMenuItem;
+        private ToolStripMenuItem меньшеToolStripMenuItem;
+        private ToolStripMenuItem большеToolStripMenuItem;
+        private ToolStripMenuItem весToolStripMenuItem;
+        private ToolStripMenuItem меньшеToolStripMenuItem1;
+        private ToolStripMenuItem большеToolStripMenuItem1;
+        private ToolStripMenuItem бюджетToolStripMenuItem;
+        private ToolStripMenuItem меньшеToolStripMenuItem2;
+        private ToolStripMenuItem большеToolStripMenuItem2;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
+        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn Column8;
+        private DataGridViewTextBoxColumn Column9;
+        private DataGridViewTextBoxColumn Column10;
+        private ToolStripMenuItem годToolStripMenuItem;
+        private ToolStripMenuItem меньшеToolStripMenuItem3;
+        private ToolStripMenuItem большеToolStripMenuItem3;
+        private Button buttonGuide_KEA;
+        private Button buttonAbout_KEA;
+        private ToolTip toolTip1;
     }
 }
