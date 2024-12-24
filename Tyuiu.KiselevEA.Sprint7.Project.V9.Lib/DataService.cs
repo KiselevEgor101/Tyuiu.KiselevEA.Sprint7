@@ -16,7 +16,7 @@ namespace Tyuiu.KiselevEA.Sprint7.Project.V9.Lib
                 string[] header = lines[0].Split(';');
                 foreach (var column in header)
                 {
-                    dataTable.Columns.Add(column);
+                    dataTable.Columns.Add(column); 
                 }
 
                 // Заполнение данных
